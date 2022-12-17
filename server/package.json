@@ -5,13 +5,12 @@
   "main": "index.js",
   "scripts": {
     "install-server": "npm install --prefix server",
-    "install-client": "npm install --prefix client",
     "install": "npm install server",
-    "server": "npm run watch --prefix client",
+    "server": "npm run watch --prefix server",
     "watch":"npm run server",
     "deploy": "npm run start --prefix server",
     "test":"npm test --prefix server",
-    "start0": "nodemon index.js"
+    "start": "nodemon index.js"
 
   },
   "author": "jignesh patel",
