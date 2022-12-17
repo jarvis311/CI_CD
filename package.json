@@ -1,0 +1,22 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "CI-CD",
+    "main": "index.js",
+    "scripts": {
+      "install-server": "npm install --prefix server",
+      "install": "npm install server",
+      "server": "npm run watch --prefix server",
+      "watch":"npm run server",
+      "deploy": "npm run start --prefix server",
+      "test":"npm test --prefix server",
+      "start": "nodemon index.js"
+  
+    },
+    "author": "jignesh patel",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.18.2"
+    }
+  }
+  
